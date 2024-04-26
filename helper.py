@@ -1,6 +1,5 @@
 import numpy as np
 
-
 def fetch_medal_tally(df, year, country):
     medal_df = df.drop_duplicates(subset=['Team', 'NOC', 'Games', 'Year', 'City', 'Sport', 'Event', 'Medal'])
     flag = 0
@@ -39,7 +38,7 @@ def country_year_list(df):
     country.sort()
     country.insert(0, 'Overall')
 
-    return years,country
+    return years, country
 
 def data_over_time(df,col):
 
